@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .slide{
+    height: 300px;
+    overflow: hidden;
+    margin:0;
+    padding: 0;
+}
+ul,li{
+    list-style: none;
+}
+.slide ul{
+    width: 300%;
+    display: flex;
+    animation: slide 8s infinite;
+
+}
+.slide li{
+    width: 40%;
+    height: 250px;
+    margin-left: -40px;
+}
+.slide li:nth-child(1){
+    background-image: url(./img/news1.png);
+    background-size: 100% 100%;
+}
+.slide li:nth-child(2){
+    background-image: url(./img/news2.png);
+    background-size: 100% 100%;
+}
+.slide li:nth-child(3){
+    background: url(./img/news3.png);
+    background-size: 100% 100%;
+}
+@keyframes slide{
+    0%{
+        margin-left: 0;
+    }
+    20%{
+        margin-left: 0;
+    }
+    30%{
+        margin-left: -100%;
+    }
+    50%{
+        margin-left: -100%;
+    }
+    70%{
+        margin-left: -200%;
+    }
+    90%{
+        margin-left: -200%;
+    }
+    100%{
+        margin-left: 0%;
+    }
+}
+</style>
+<body>
+    <article class="slide">
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </article>
+</body>
+</html>
+
+<!-- overflow 속성을 hidden으로 설정해주면 삐져나오는 컨텐트를 반대로 숨겨버릴 수 있습니다. -->

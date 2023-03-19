@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #static1{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            position: static;
+            left: 50px;
+            /* 이게안됨 */
+        }
+        #static2{
+            width: 100px;
+            height: 100px;
+            background-color: orange;
+            position: static;
+        }
+        #static3{
+            width: 100px;
+            height: 100px;
+            background-color: yellow;
+            position: static;
+        }
+    </style>
+</head>
+<body>
+
+    <div id ="static1">static1</div>
+    <div id ="static2">static2</div>
+    <div id ="static3">static3</div>
+</body>
+</html>
+
+<!-- none은 위치까지 사라지지만 hidden은 위치를 가지고 있음 -->
+<!-- inline과 inline-block의 차이점은? -->
